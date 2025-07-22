@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width+device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d039f48661.js" crossorigin="anonymous"></script>
@@ -14,12 +14,14 @@
     <div class="container">
         <nav>
             <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Project</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
         </nav>
         <div class="header-text">
@@ -33,14 +35,13 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.jpg">
+                <img src="images/user.png">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard dummy text 
-                    ever since the 1500s, when an unknown printer took a galley of type 
-                    and scrambled it to make a type specimen book.</p>
+                <p>Greetings. My name is Aisy Batrisyia, an undergraduate from Universiti Teknologi MARA 
+                    (UiTM). 
+                </p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -49,21 +50,22 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Game Development</span><br>Designing and building game</li>
                             <li><span>Web Development</span><br>Web app development</li>
                             <li><span>App Development</span><br>Building Android apps</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2022 - 2023</span><br>Intership at Pejabat Tanah dan Daerah</li>
+                            <li><span>2022 - 2023</span><br>Internship at Pejabat Tanah dan Daerah</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2023</span><br>Bachelor Degree in Computer Science (Hons.) Multimedia Computing</li>
+                            <a href="images/My Degree Transcript.pdf" download>Get my Transcript</a>
                             <li><span>2020</span><br>Diploma in Computer Science</li>
-                            <li><span>2019</span><br>Building Android apps</li>
+                            <a href="images/My Diploma Transcript.pdf" download>Get my Transcript</a>
                         </ul>
                     </div>
             </div>
@@ -74,28 +76,25 @@
 <!--------------services---------------->
 <div id="services">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <h1 class="sub-title">My Projects</h1>
         <div class="services-list">
             <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard dummy text </p>
-                    <a href="#">Learn more</a>
+                <i class="fa-solid fa-cube"></i>
+                <h2>3D Modelling</h2>
+                <p>3D Modelling that has been done by using Blender and 3DS Max.</p>
+                    <a href="gallery.html">Learn more</a>
             </div>
             <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                <h2>UI/UX</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard dummy text </p>
-                    <a href="#">Learn more</a>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game Development</h2>
+                <p>Game that i design and build as my final year project by using Unity.</p>
+                    <a href="gallery.html">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-app-store-ios"></i>
-                <h2>App Design</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard dummy text </p>
-                    <a href="#">Learn more</a>
+                <h2>Web Development</h2>
+                <p>Website that I developed using HTML, CSS and JavaScript.</p>
+                    <a href="gallery.html">Learn more</a>
             </div>
         </div>
     </div>
@@ -107,30 +106,80 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/work-1.png">
+                <img src="images/work4.jpg">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>sjhgcbiecnksncojskc</p>
-                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Bonfire Camp Management System</h3>
+                    <p>A camp management system that is developed in a group using JavaBeans.</p>
+                    <a href="report/Bonfire Camp Management System Report.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-2.png">
+                <img src="images/work2.jpg">
                 <div class="layer">
-                    <h3>Music App</h3>
-                    <p>sjhgcbiecnksncojskc</p>
-                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Freedom Quest</h3>
+                    <p>Game that i design and build as my final year project by using Unity.</p>
+                    <a href="https://yurixeon.itch.io/freedom-quest"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="images/work3.jpg">
                 <div class="layer">
-                    <h3>Online Shop App</h3>
-                    <p>sjhgcbiecnksncojskc</p>
-                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Toytopia Toy Shop</h3>
+                    <p>An VR project that is developed in a group using 3DS Max and Unity.</p>
+                    <a href="report/Toytopia Toy Shop VR Report.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
+        <a href="#" class="btn" onclick="toggleGallery()">See more</a>
+
+        <div id="gallerySection" class="gallery-section hidden">
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <img src="images/img1.png" alt="Image 1">
+                    <img src="images/img2.png" alt="Image 2">
+                    <img src="images/img3.jpg" alt="Image 3">
+                    <img src="images/img4.jpg" alt="Image 4">
+                    <img src="images/img5.jpg" alt="Image 5">
+                    <img src="images/anim1.jpg" alt="Image 6">
+                </div>
+                <div class="nav-buttons">
+                    <button onclick="prevSlide()">❮</button>
+                    <button onclick="nextSlide()">❯</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------contact--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> aisybatrisyia.aw@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0184629293</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aisy-batrisyia-abd-wahid-628880278/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/My Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Aisy. Made with <i class="fa-solid fa-heart"></i></p>
     </div>
 </div>
 
@@ -148,6 +197,72 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxQvYHrXd4SfP8thxKpeuiWXBXEZI2k2PqBrAeVRI7Dn3ilOvgi6L_EV4yaCGT-noU4rg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+           .then(response => {
+                msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+        form.reset()
+      })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script>
+    const gallerySection = document.getElementById('gallerySection');
+    const carousel = document.getElementById('carousel');
+    const slidesPerView = 3;
+    const totalSlides = carousel.children.length;
+    let index = 0;
+
+    function toggleGallery() {
+        event.preventDefault();
+        gallerySection.classList.toggle('hidden');
+
+        if (!gallerySection.classList.contains('hidden')) {
+            gallerySection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    function updateCarousel() {
+        const slideWidth = 100 / slidesPerView;
+        carousel.style.transform = `translateX(-${index * slideWidth}%)`;
+    }
+
+    function nextSlide() {
+        if (index < totalSlides - slidesPerView) {
+            index++;
+            updateCarousel();
+        }
+    }
+
+    function prevSlide() {
+        if (index > 0) {
+            index--;
+            updateCarousel();
+        }
     }
 </script>
 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d039f48661.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- ======= Header ======= -->
+<div id="mini-header">
+  <div class="container">
+    <nav class="simple-nav">
+      <img src="images/logo.png" class="logo" alt="Logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+  <!-- ======= Intro Section ======= -->
+  <section class="intro">
+    <div class="container">
+      <h1>My Project</h1>
+      <p>Here are some of the works I've built — from design to code. This section includes both academic and personal projects that highlight my skills and creativity.</p>
+    </div>
+  </section>
+
+  <!-- ======= Project Cards Section ======= -->
+  <section class="projects">
+    <div class="container project-grid">
+      <div class="project-card">
+        <div class="top-content">
+          <img src="images/logo.png" alt="Project 1">
+          <div class="text">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website to promote myself as a dediacted and hardworking student in the computer science industry.</p>
+          </div>
+        </div>
+        <div class="more-details">
+          <p><strong>Tools:</strong> HTML, CSS, JavaScript, Figma</p>
+          <p><strong>Role:</strong> UI Designer & Web Developer</p>
+          <p><strong>Task:</strong></p>
+          <p>Design the interface and logo in Figma</p>
+          <p>Develop the website using HTML, CSS, and JavaScript</p>
+          <a href="#" class="btn">View Full Project</a>
+        </div>
+        <div class="arrow-strip">
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="top-content">
+          <img src="images/logo.png" alt="Project 2">
+          <div class="text">
+            <h3>Freedom Quest</h3>
+            <p>A Unity-based educational game designed for kids to learn safety and awareness.</p>
+          </div>
+        </div>
+        <div class="more-details">
+          <p><strong>Tools:</strong> Unity, C#, Canva</p>
+          <p><strong>Role:</strong> Game Designer & Developer</p>
+          <p><strong>Task:</strong></p>
+          <p>Design the interface and 2D assets using Canva</p>
+          <p>Develop the 3D assets using Blender</p>
+          <p>Develop the game using Unity</p>
+          <a href="https://yurixeon.itch.io/freedom-quest" class="btn">View Full Project</a>
+        </div>
+        <div class="arrow-strip">
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="top-content">
+          <img src="images/logo.png" alt="Project 3">
+          <div class="text">
+            <h3>Bonfire Camp Management System</h3>
+            <p>The Bonfire Camp Management System is a web-based application built using the MVC architecture to manage campsite reservations, customers, and company data.</p>
+          </div>
+        </div>
+        <div class="more-details">
+          <p><strong>Tools:</strong> JavaBeans, Servlets, HTML, JavaServer Pages (JSP), MVC Framework</p>
+          <p><strong>Role:</strong> UI Designer & Web Developer</p>
+          <p><strong>Task:</strong></p>
+          <p>Design and implement Java classes for system entities using JavaBeans</p>
+          <p>Create HTML templates for UI structure using HTML and JSP</p>
+          <a href="report/Bonfire Camp Management System Report.pdf" class="btn">View Full Project</a>
+        </div>
+        <div class="arrow-strip">
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+      <div class="copyright">
+        <p>Copyright © Aisy. Made with <i class="fa-solid fa-heart"></i></p>
+      </div>
+
+<script>
+  // Select all arrow strips
+  document.querySelectorAll('.arrow-strip').forEach(strip => {
+    strip.addEventListener('click', function () {
+      // Toggle 'expanded' class on the parent .project-card
+      this.closest('.project-card').classList.toggle('expanded');
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
